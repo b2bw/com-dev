@@ -1,2 +1,0 @@
-svg
-  use(xlink:href='#{{include.name}}')
