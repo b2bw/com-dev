@@ -5,4 +5,4 @@ group :jekyll_plugins do
 end
 
 
-gem "jekyll", "3.4.0"
+gem "jekyll", "3.4.1"
