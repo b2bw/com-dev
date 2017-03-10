@@ -36,7 +36,7 @@ wget -kO $tmp $base/bildungsprojekte.html
 sed -i "s|$base/gesundheit.html|$target/gesundheit.htm|" $tmp
 sed -i "s|$base/mawas.html|$target/mawas.htm|" $tmp
 sed -i "s|$base/mikrokredit.html|$target/mikrokredit.htm|" $tmp
-sed -i "s|$base/|$target.htm|" $tmp
+sed -i "s|$base/#bildungsprojekte|$target.htm#bildungsprojekte|" $tmp
 aws s3 cp --acl public-read $tmp $prefix$target/bildungsprojekte.htm
 
 # gesundheit
@@ -44,7 +44,7 @@ wget -kO $tmp $base/gesundheit.html
 sed -i "s|$base/bildungsprojekte.html|$target/bildungsprojekte.htm|" $tmp
 sed -i "s|$base/mawas.html|$target/mawas.htm|" $tmp
 sed -i "s|$base/mikrokredit.html|$target/mikrokredit.htm|" $tmp
-sed -i "s|$base/|$target.htm|" $tmp
+sed -i "s|$base/#gesundheit|$target.htm#gesundheit|" $tmp
 aws s3 cp --acl public-read $tmp $prefix$target/gesundheit.htm
 
 # mawas
@@ -52,7 +52,7 @@ wget -kO $tmp $base/mawas.html
 sed -i "s|$base/bildungsprojekte.html|$target/bildungsprojekte.htm|" $tmp
 sed -i "s|$base/gesundheit.html|$target/gesundheit.htm|" $tmp
 sed -i "s|$base/mikrokredit.html|$target/mikrokredit.htm|" $tmp
-sed -i "s|$base/|$target.htm|" $tmp
+sed -i "s|$base/#mawas|$target.htm#mawas|" $tmp
 aws s3 cp --acl public-read $tmp $prefix$target/mawas.htm
 
 # mikrokredit
@@ -60,7 +60,7 @@ wget -kO $tmp $base/mikrokredit.html
 sed -i "s|$base/bildungsprojekte.html|$target/bildungsprojekte.htm|" $tmp
 sed -i "s|$base/gesundheit.html|$target/gesundheit.htm|" $tmp
 sed -i "s|$base/mawas.html|$target/mawas.htm|" $tmp
-sed -i "s|$base/|$target.htm|" $tmp
+sed -i "s|$base/#mikrokredit|$target.htm#mikrokredit|" $tmp
 aws s3 cp --acl public-read $tmp $prefix$target/mikrokredit.htm
 
 
