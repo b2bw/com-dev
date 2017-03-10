@@ -7,9 +7,10 @@ tmp=$(mktemp --suffix=.html)
 
 # mapping
 # https://b2bw.github.io/com-dev/ -> /de/nachhaltige-entwicklung.htm
-# https://b2bw.github.io/com-dev/ost-kalimantan.html -> /de/ost-kalimantan.htm
-# https://b2bw.github.io/com-dev/salat-island.html -> /de/salat-island.htm
-# https://b2bw.github.io/com-dev/technische-detail.html -> /de/technische-details.htm
+# https://b2bw.github.io/com-dev/bildungsprojekte.html -> /de/bildungsprojekte.htm
+# https://b2bw.github.io/com-dev/gesundheit.html -> /de/gesundheit.htm
+# https://b2bw.github.io/com-dev/mawas.html -> /de/mawas.htm
+# https://b2bw.github.io/com-dev/mikrokredit.html -> /de/mikrokredit.htm
 
 # retrieve html from primary hosting into temp file
 wget -kO $tmp https://b2bw.github.io/com-dev/
