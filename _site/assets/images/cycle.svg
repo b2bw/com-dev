@@ -1,0 +1,55 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408 407.98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6e6e6;
+      }
+
+      .cls-2 {
+        fill: #ccc;
+      }
+
+      .cls-3 {
+        fill: #b3b3b3;
+      }
+
+      .cls-4 {
+        fill: gray;
+      }
+
+      .cls-5 {
+        fill: #999;
+      }
+
+      .cls-6 {
+        font-size: 18px;
+        font-family: MyriadPro-Regular, Myriad Pro;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0.02em;
+      }
+
+      .cls-9 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-10 {
+        letter-spacing: -0.04em;
+      }
+    </style>
+  </defs>
+  <title>cycle</title>
+  <g>
+    <path class="cls-1" d="M105.73,169.94A104.19,104.19,0,0,1,202,100V0A204.18,204.18,0,0,0,10.51,139Z"/>
+    <path class="cls-2" d="M206,100a104.19,104.19,0,0,1,96.27,69.94l46.64-15.15L397.49,139A204.18,204.18,0,0,0,206,0V100Z"/>
+    <path class="cls-3" d="M303.51,173.74a103.93,103.93,0,0,1-36.8,113.14l58.85,81a206.66,206.66,0,0,0,22.71-19.64A202.68,202.68,0,0,0,408,204a204.82,204.82,0,0,0-9.28-61.16Z"/>
+    <path class="cls-4" d="M82.44,367.89l58.85-81a103.93,103.93,0,0,1-36.8-113.14L9.28,142.81A204.83,204.83,0,0,0,0,204,202.68,202.68,0,0,0,59.72,348.25,206.66,206.66,0,0,0,82.44,367.89Z"/>
+    <path class="cls-5" d="M263.48,289.24a103.77,103.77,0,0,1-119,0l-58.85,81a204.38,204.38,0,0,0,236.65,0Z"/>
+  </g>
+  <!-- <text class="cls-6" transform="translate(139.68 211.71)">P<tspan class="cls-7" x="9.58" y="0">R</tspan><tspan x="19.31" y="0">OJE</tspan><tspan class="cls-8" x="47.23" y="0">K</tspan><tspan x="57.37" y="0">TZ</tspan><tspan class="cls-9" x="76.27" y="0">Y</tspan><tspan x="85.88" y="0">K</tspan><tspan class="cls-10" x="95.63" y="0">L</tspan><tspan x="103.48" y="0">US</tspan></text> -->
+</svg>
