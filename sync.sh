@@ -5,6 +5,9 @@ prefix=s3://www.bos-schweiz.ch
 # create a temp file to hold html
 tmp=$(mktemp --suffix=.html)
 
+# mapping
+# https://b2bw.github.io/com-dev/ -> /de/nachhaltige-entwicklung.htm
+
 # retrieve html from primary hosting into temp file
 wget -kO $tmp https://b2bw.github.io/com-dev/
 
