@@ -1,80 +1,22 @@
 <div class="row expanded clearfix" id="helpbar" style="visibility:hidden;opacity:0">
   <div class="row expanded" id="helptext">
-    <div class="menu-col">
+
+
+      {% for mainitem in site.data.menus.ul.li %}
+      <div class="menu-col">
       <ul class="menu vertical">
-        <li class="cat">Aktuell</li>
-        <li>Neue Babyhäuser</li>
-        <li>Neues Zuhause für Malaienbären</li>
-        <li>Kein Regenwald auf meinem Teller</li>
-        <li>Nachrichten</li>
-        <li>Das sagen Sie über BOS</li>
+
+        <li class="cat">
+          <a href="http://bos-schweiz.ch{{mainitem.a._href}}">{{mainitem.a.__text}}</a>
+        </li>
+                {% for nesteditem in mainitem.ul.li %}
+                <li><a href="http://bos-schweiz.ch{{nesteditem.a._href}}">
+                  {{nesteditem.a.__text}}
+                </a></li>
+                {% endfor %}
       </ul>
     </div>
-    <div class="menu-col">
-      <ul class="menu vertical">
-        <li class="cat">Projekte</li>
-        <li>Bauprojekte</li>
-        <li>Salat Island</li>
-        <li>Wiederaufforstung</li>
-        <li>Kampagnen</li>
-        <li>Auswilderung</li>
-        <li>Regenwald</li>
-        <li>BOS-Rettungsstationen</li>
-      </ul>
-    </div>
-    <div class="menu-col">
-      <ul class="menu vertical">
-        <li class="cat">Orang-Utan</li>
-        <li>Wissenswertes</li>
-        <li>Auswilderung</li>
-        <li>Orang-Utans in Gefahr</li>
-        <li>Plüschis ab in die Freiheit</li>
-      </ul>
-    </div>
-    <div class="menu-col">
-      <ul class="menu vertical">
-        <li class="cat">Aktiv Werden</li>
-        <li>Hilfpakete schnüren</li>
-        <li>Bäume pflanzen in Samboja</li>
-        <li>Herzensangelegenheit</li>
-        <li>Orang-Utan-Patenschaft</li>
-        <li>Fördermitglied</li>
-        <li>Spenden</li>
-        <li>Testamentspenden</li>
-        <li>Shop</li>
-        <li>Volontariat Vorort</li>
-        <li>Petitionen</li>
-        <li>Freiwilligenarbeit</li>
-        <li>Das sagen Sie über BOS</li>
-        <li>Plüschis ab in die Freiheit</li>
-      </ul>
-    </div>
-    <div class="menu-col">
-      <ul class="menu vertical">
-        <li class="cat">Mediathek</li>
-        <li>Zum Lesen</li>
-        <li>Für Ihre Ohren </li>
-        <li>Für Ihre Augen</li>
-        <li>In den Medien</li>
-        <li>Für die Medien</li>
-        <li>Nachrichtenarchiv</li>
-      </ul>
-    </div>
-    <div class="menu-col">
-      <ul class="menu vertical">
-        <li class="cat">Über BOS</li>
-        <li>Überblick und Vereinszweck</li>
-        <li>Unser Vorstand</li>
-        <li>Unser Team in der Geschäftsstelle</li>
-        <li>BOS Freunde</li>
-        <li>BOS Stiftung (BOSF)</li>
-        <li>Die BOS Familie weltweit</li>
-        <li>Die BOS Familie weltweit</li>
-        <li>Samboja Lodge</li>
-        <li>Kontakt/Impressum</li>
-        <li>Das sagen Sie über BOS</li>
-      </ul>
-    </div>
+      {% endfor %}
   </div>
   <button id="close-help"><span>×</span></button>
 </div>

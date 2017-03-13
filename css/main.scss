@@ -16,6 +16,7 @@ $pale-maroon: #76686d;
 $peach: #ffb770;
 $almost-white: #fbf9f0;
 $dark-leaves: #f4f2e4;
+$dark-maroon: #58464c;
 
 @-webkit-keyframes slowbounce {
     0% {
@@ -135,7 +136,7 @@ svg {
 body {
     background: $earthy1;
     color: $earthy5;
-    color: #58464c;
+    color: $dark-maroon;
     background: $almost-white;
 }
 
@@ -614,7 +615,7 @@ body.subpage > .section.light {
 #helpbar {
     margin: 0;
     padding: 24px;
-    background: #eee;
+    background: $dark-leaves;
     width: 100%;
     max-width: none;
     height: auto;
@@ -629,7 +630,14 @@ body.subpage > .section.light {
         /* max-width: 45em;*/
         margin: 0 auto;
         text-align: left;
-        color: $earthy5;
+        color: $dark-maroon;
+
+        a {
+          color: $dark-maroon;
+          &:hover {
+            color: black;
+          }
+        }
 
         p {
             color: $earthy5;
