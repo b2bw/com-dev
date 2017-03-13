@@ -1846,7 +1846,7 @@ kbd {
   line-height: 1.4;
   color: #8a8a8a; }
 
-.lead {
+.lead, .section-content p {
   font-size: 125%;
   line-height: 1.6; }
 
@@ -3956,7 +3956,7 @@ body.subpage > .section.light {
         float: right; }
       .section-content:last-child:last-child {
         float: left; } }
-  .section-content p.lead, .section-content img {
+  .section-content p.lead, .section-content p, .section-content img {
     margin-bottom: 24px; }
   .section-content .graphic {
     margin: 48px 0; }
