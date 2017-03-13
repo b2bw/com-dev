@@ -66,3 +66,28 @@ $('#mobile-menu-toggler, #main-menu-toggler').on('click',function(){
 $('#close-help').on('click',function(){
 	TweenMax.to($('#helpbar'),.2,{autoAlpha:0})
 });
+
+
+//submit paypal form
+function submitPayPal(code){
+
+ form = document.createElement('form');
+				formContent = '<input type="hidden" name="cmd" value="_s-xclick">';
+				formContent += '<input type="hidden" name="hosted_button_id" value="'+code+'">';
+        formContent += '<input type="submit" />';
+        form.method = 'post';
+        form.action = 'https://www.paypal.com/cgi-bin/webscr';
+        form.target = '_top';
+        form.innerHTML = formContent;
+        form.style.display = 'none';
+        document.body.appendChild(form);
+        form.querySelector('[type="submit"]').click();
+			}
+
+
+				// <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				//   <input type="hidden" name="cmd" value="_s-xclick">
+				//   <input type="hidden" name="hosted_button_id" value="{{include.code}}">
+				//   <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+				//   <input type="submit" class="bos-button donate hollow expanded donate-button donate{{forloop.index}}" name="submit" value="{{include.button-text}}">
+				// </form>

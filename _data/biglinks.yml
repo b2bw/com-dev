@@ -1,7 +1,10 @@
 ---
 - name: Patenschaft
   icon: hand-heart-ou
+  link: http://www.bos-schweiz.ch/de/aktiv-werden/orangutanpatenschaft.htm
 - name: Spenden
   icon: donate
+  link: http://www.bos-schweiz.ch/de/helfen/spenden.htm
 - name: Shop
   icon: heartshop
+  link: http://shop.bos-schweiz.ch/App/Home.aspx

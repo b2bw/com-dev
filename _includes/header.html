@@ -22,14 +22,14 @@
      <div class="top-nav-center">
     <ul class="menu expanded">
            {% for link in site.data.biglinks %}
-              <li><a href="#"><svg><use xlink:href='#{{link.icon}}'></use></svg> <Br>{{link.name}}</a></li>
+              <li><a href="{{link.link}}"><svg><use xlink:href='#{{link.icon}}'></use></svg> <Br>{{link.name}}</a></li>
           {% endfor %}
           </ul>
     </div>
 
         <div class="top-nav-right hide-for-small-only">
       <ul class="menu">
-          <li><a href="#"><svg><use xlink:href='#search'></use></svg> <Br>Search</a></li>
+          <li><a href="http://www.bos-schweiz.ch/de/search.htm"><svg><use xlink:href='#search'></use></svg> <Br>Suchen</a></li>
           <li><a href="#" id="main-menu-toggler"><svg><use xlink:href='#menu'></use></svg> <Br>Menu</a></li>
       </ul>
     </div>
