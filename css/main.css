@@ -3790,6 +3790,9 @@ header {
 .space-left {
   margin-left: 12px; }
 
+.space-above {
+  margin-top: 48px; }
+
 #titleblock {
   margin-bottom: 0;
   margin-top: 48px; }
