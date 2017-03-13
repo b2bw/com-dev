@@ -429,6 +429,10 @@ body.subpage > .section.light {
         margin-bottom: 24px;
     }
 
+    p {
+      @extend .lead;
+    }
+
     .graphic {
         margin: 48px 0;
 
