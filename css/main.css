@@ -3734,9 +3734,16 @@ body {
   background: #fbf9f0; }
 
 .svg {
-  background: none; }
+  background: none;
+  max-height: 170px;
+  position: relative;
+  z-index: 0; }
   .svg.dark svg {
     fill: #f4f2e4; }
+  .svg.final {
+    background: #ffb770; }
+    .svg.final svg {
+      fill: #f4f2e4; }
   .svg.light {
     background: #f4f2e4; }
     .svg.light svg {
@@ -3910,6 +3917,7 @@ body.subpage > .section.light {
   margin-top: 80px; }
 
 .section-title {
+  position: relative;
   width: 100%;
   float: left;
   padding-left: 0.9375rem;
@@ -3924,6 +3932,7 @@ body.subpage > .section.light {
         font-size: 1.5rem; } }
 
 .section-content {
+  position: relative;
   width: 100%;
   float: left;
   padding-left: 0.9375rem;
@@ -4216,6 +4225,8 @@ svg#process .big-number {
 footer {
   padding: 12px;
   background: #ffb770; }
+  footer div {
+    position: relative; }
   @media screen and (min-width: 40em) {
     footer {
       padding: 24px; } }
@@ -4244,3 +4255,12 @@ footer {
     margin-left: 0; }
     footer ul li a {
       color: #76686d; }
+
+.share-buttons {
+  padding: 24px; }
+  .share-buttons a {
+    color: #58464c; }
+  .share-buttons svg {
+    width: 36px;
+    height: 36px;
+    margin: 6px; }

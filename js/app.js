@@ -83,3 +83,22 @@ function submitPayPal(code){
         document.body.appendChild(form);
         form.querySelector('[type="submit"]').click();
 			}
+
+
+var twitter = function(e){
+  e.preventDefault()
+  social_url = "https://twitter.com/intent/tweet?source=webclient&text=" + encodeURI(window.location + "#timeline ");
+  window.open(social_url, "_blank").focus();
+}
+
+
+
+var facebook = function(e){
+  e.preventDefault()
+  social_url = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURI(window.location);
+  window.open(social_url, "_blank").focus();
+}
+
+
+document.getElementById('twitter-share-timeline').onclick = twitter
+document.getElementById('facebook-share').onclick = facebook
