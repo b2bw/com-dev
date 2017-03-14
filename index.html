@@ -192,8 +192,7 @@ title: BOS ComDev
     <div class="graphic"><img src="assets/images/school-group.jpg"></div>
     <p class="lead">Die notwendigen Kapazitäten und personellen Ressourcen sind aufgebaut, etablierte Abläufe in der Projektabwicklung formalisiert und gemeinsame Lernprozesse längst zur Grundlage zukünftiger Vorhaben geworden. Einer Ausweitung unserer Entwicklungszusammenarbeit
       steht somit nichts im Wege!</p>
-    <div class="graphic"></div>
-    <h4 class="text-center">Zeitstrahl Entwicklung Com Dev Aktivitäten</h4>
+    <h4 class="text-center" id="timeline">Chronologie unserer Aktivitäten zur Nachhaltigen Entwicklung</h4>
     <div class="row clearfix show-for-large-up">
       <div class="large-6 columns">
         <h5 class="timeline-location">Zentralkalimantan</h5>
@@ -222,10 +221,14 @@ title: BOS ComDev
     {% endfor %} {% endfor %}
   </div>
   <div class="section-content">
-    <!-- <div class="action-buttons text-center clearfix">
-      <a href="#"></a>
-      <button class="bos-button info float-center space-bottom">share</button>
-    </div> -->
+    <div class="share-buttons text-center clearfix">
+      <a href="#" id="twitter-share-timeline">
+        {% include svg_icon.html name="twitter" %}
+      </a>
+      <a href="#" id="facebook-share-timeline">
+        {% include svg_icon.html name="facebook" %}
+      </a>
+    </div>
     <p class="lead">Unsere Entwicklungszusammenarbeit vor Ort finanzieren wir über Stiftungs- und Spendengelder. Über die Jahre haben wir nicht nur erhebliche Summen für Vorhaben in diesem Bereich eingeworben, sondern auch unseren vertrauenswürdigen Umgang mit den Mitteln
       bewiesen. Bitte spenden auch Sie oder werden Sie anderweitig aktiv!</p>
       <div class="action-buttons text-center">

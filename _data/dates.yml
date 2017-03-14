@@ -15,12 +15,12 @@
     location: Zentralkalimantan
 - year: 2011
   events:
-  - event: Februar - Beginn Pilotprojekt
+  - event: Februar - Beginn Pilotprojekt in Batampang (4 Frauen- und Männergruppen; insg. 11 Mitglieder; CU System) und in Timpah (3 Frauengruppen, insg. 26 Mitglieder; TTLS System)
     location: Zentralkalimantan
-  - event: Batampang - 4 Frauen- und Männergruppen (insg. 11 Mitglieder); CU System
-    location: Zentralkalimantan
-  - event: Timpah - 3 Frauengruppen (insg. 26 Mitglieder); TTLS System
-    location: Zentralkalimantan
+  # - event: Batampang - 4 Frauen- und Männergruppen (insg. 11 Mitglieder); CU System
+  #   location: Zentralkalimantan
+  # - event: Timpah - 3 Frauengruppen (insg. 26 Mitglieder); TTLS System
+  #   location: Zentralkalimantan
 - year: 2012
   events:
   - event: Mai - Einsatz eines BOSF Mitarbeiters zur Koordination der Mikrokreditprojekte
