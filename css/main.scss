@@ -152,6 +152,13 @@ body {
         }
     }
 
+        &.final {
+          background: $peach;
+            svg {
+                fill: $dark-leaves;
+            }
+        }
+
     &.light {
         background:$dark-leaves;
 
@@ -783,6 +790,10 @@ svg#process {
 
 footer {
   padding: 12px;
+
+  div {
+    position: relative;
+  }
   @include breakpoint(medium){
     padding: 24px;
   }
