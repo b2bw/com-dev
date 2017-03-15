@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 prefix=s3://www.bos-schweiz.ch
 
@@ -8,7 +8,7 @@ tmp=$(mktemp --suffix=.html)
 # MAPPING
 # =======
 # http://born2bewild.org         -> http://bos-schweiz.ch
-# -----------------------------------------------------------------------------
+# ---------------------------------------------------------------------------------
 # /com-dev/                      -> /f/nachhaltige-entwicklung/index.htm
 # /com-dev/bildungsprojekte.html -> /f/nachhaltige-entwicklung/bildungsprojekte.htm
 # /com-dev/gesundheit.html       -> /f/nachhaltige-entwicklung/gesundheit.htm
@@ -68,5 +68,5 @@ aws s3 cp --acl public-read $tmp $prefix$target/mikrokredit.htm
 rm $tmp
 
 # send an email to local user root
-echo "http://www.bos-schweiz.ch/de/entwicklung/nachhaltige-entwicklung.htm" \
+echo "http://bos-schweiz.ch/f/nachhaltige-entwicklung/" \
     | mail -s "LP ComDev has been updated." root
