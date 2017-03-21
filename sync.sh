@@ -68,5 +68,5 @@ aws s3 cp --acl public-read $tmp $prefix$target/mikrokredit.htm
 rm $tmp
 
 # send an email to local user root
-echo "http://bos-schweiz.ch/f/nachhaltige-entwicklung/" \
+echo "http://www.bos-schweiz.ch/f/nachhaltige-entwicklung/" \
     | mail -s "LP ComDev has been updated." root
