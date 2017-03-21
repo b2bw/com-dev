@@ -19,3 +19,7 @@ run `gulp`
 This will add the new svg icon to the main icon symbol. It will then be available as:
 
 `{% include svg.svg name="[svg-name]" %}`
+
+# misc
+
+Bogus change to trigger github pages.
