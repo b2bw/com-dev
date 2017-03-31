@@ -1,4 +1,4 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 835.66 444.31">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="30 0 780.66 444.31">
   <defs>
     <style>
       .cls-1 {
@@ -329,6 +329,8 @@
   <polyline class="cls-16" points="443.27 162.49 443.27 227.85 346.74 227.85 346.74 131.87 443.27 131.87 443.27 162.49"/>
   <polygon class="cls-17" points="396.9 158.67 391.78 158.67 391.78 153.55 394.34 150.88 396.9 153.55 396.9 158.67"/>
   <polygon class="cls-17" points="375.01 208.75 369.89 208.75 369.89 203.62 372.45 200.95 375.01 203.62 375.01 208.75"/>
+<g transform="translate(20 0)">
   <text class="cls-18" transform="translate(45.42 427.2)">BOS Entwicklungszusammenarbeit</text>
   <polygon class="cls-17" points="39.16 427.2 25.05 427.2 25.05 413.09 32.11 405.73 39.16 413.09 39.16 427.2"/>
+</g>
 </svg>

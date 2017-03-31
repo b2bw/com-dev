@@ -18,6 +18,10 @@ $almost-white: #fbf9f0;
 $dark-leaves: #f4f2e4;
 $dark-maroon: #58464c;
 
+img {
+  width: 100%;
+}
+
 @-webkit-keyframes slowbounce {
     0% {
         bottom: 24px;
