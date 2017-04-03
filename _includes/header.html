@@ -6,6 +6,7 @@
       </div>
       <div id="logo-text" class="float-left hide-for-small-only">
         BORNEO <BR>ORANGUTAN <BR>SURVIVAL<BR> SCHWEIZ
+
       </div>
     </div>
 
@@ -17,9 +18,14 @@
       </ul>
     </div>
 
+        <div class="top-nav-right hide-for-small-only large-push-4">
+      <ul class="menu">
+          <li><a href="http://www.bos-schweiz.ch/de/search.htm"><svg><use xlink:href='#search'></use></svg> <Br>Suchen</a></li>
+          <li><a href="#" id="main-menu-toggler"><svg><use xlink:href='#menu'></use></svg> <Br>Menu</a></li>
+      </ul>
+    </div>
 
-
-     <div class="top-nav-center">
+     <div class="top-nav-center large-pull-4">
     <ul class="menu expanded">
            {% for link in site.data.biglinks %}
               <li><a href="{{link.link}}"><svg><use xlink:href='#{{link.icon}}'></use></svg> <Br>{{link.name}}</a></li>
@@ -27,11 +33,13 @@
           </ul>
     </div>
 
-        <div class="top-nav-right hide-for-small-only">
-      <ul class="menu">
-          <li><a href="http://www.bos-schweiz.ch/de/search.htm"><svg><use xlink:href='#search'></use></svg> <Br>Suchen</a></li>
-          <li><a href="#" id="main-menu-toggler"><svg><use xlink:href='#menu'></use></svg> <Br>Menu</a></li>
-      </ul>
-    </div>
+
   </nav>
+  
+    
 </header>
+        <div class="social-share text-center clearfix">
+          <a href="{{site.mailchimpURL}}" title="Updates erhalten" id="signup"><svg><use xlink:href='#signup'></use></svg></a> 
+          <a href="#" id="twitter" onclick="twitter(event)" title="auf Twitter teilen"><svg><use xlink:href='#twitter'></use></svg></a> 
+          <a href="#" id="facebook" onclick="facebook(event)" title="auf Facebook teilen"><svg><use xlink:href='#facebook'></use></svg></a> 
+        </div>
