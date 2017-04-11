@@ -260,6 +260,12 @@ $red-orange: #ff5035;
     .floating-textbox {
         margin-top: -24px;
 
+        &.give-room {
+            @include breakpoint(large) {
+                top: 800px;
+            }
+        }
+
         @include breakpoint(large) {
           margin-left: 24px;
           margin-right: 24px;
@@ -579,7 +585,7 @@ body.subpage > .section.light {
         a {
             margin: 3px;
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-
+            min-width: 118px;
             /* border-radius:3px;*/
             /* width: 95%;*/
             background: $earthy2;
@@ -602,7 +608,7 @@ body.subpage > .section.light {
             }
 
             @include breakpoint(medium) {
-                font-size: 1.2rem;
+                font-size: 1rem;
 
                 svg {
                     width: 48px;

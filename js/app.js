@@ -103,5 +103,19 @@ var facebook = function(e){
 
 
 document.getElementById('twitter-share-timeline').onclick = twitter
-// document.getElementById('twitter').onclick = twitter
-// document.getElementById('facebook').onclick = facebook
+
+// floating text-box don't cover the top stuff!!
+var $floater = $('.floating-textbox');
+function spaceOutTheFloater(){
+  if (window.innerHeight <= 820) {
+  $floater.addClass('give-room');
+  } else {
+    $floater.removeClass('give-room');
+  }
+};
+
+window.onresize = function() {
+      spaceOutTheFloater();
+}
+
+spaceOutTheFloater();
