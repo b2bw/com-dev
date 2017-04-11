@@ -89,7 +89,6 @@ function submitPayPal(code){
 
 var twitter = function(e){
   e.preventDefault()
-	console.log("trying twitt")
   social_url = "https://twitter.com/intent/tweet?source=webclient&text=" + encodeURI(window.location + "#timeline ");
   window.open(social_url, "_blank").focus();
 }
@@ -98,7 +97,6 @@ var twitter = function(e){
 
 var facebook = function(e){
   e.preventDefault()
-	console.log("trying face")
   social_url = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURI(window.location);
   window.open(social_url, "_blank").focus();
 }
