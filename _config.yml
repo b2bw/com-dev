@@ -14,7 +14,7 @@ baseurl: "/de" # the subpath of your site, e.g. /blog
 url: "http://www.bos-schweiz.ch/" # the base hostname & protocol for your site
 # mailchimpURL: http://eepurl.com/cHtYxn
 mailchimpURL: https://bos-schweiz.us15.list-manage.com/subscribe?u=39d111e30686630c3d4649e54&id=665bd799d8
-
+donateURL: "https://www.bos-schweiz.ch/de/helfen/spenden/bildung.htm?rnw-stored_customer_email_permission=true&rnw-stored_customer_message=Nachhaltige_Entwicklung"
 
 # Build settings
 markdown: kramdown
