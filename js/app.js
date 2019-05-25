@@ -32,7 +32,7 @@ $('.js-scroll-to').click(function(e) {
 
 
 $('.js-next').click(function(e) {
-	console.log("click down");
+	// console.log("click down");
   var selected = $(".section.js-current-panel");
   var anchors = $(".section");
 
@@ -57,13 +57,15 @@ $('.js-next').click(function(e) {
 
 
 //toggle help
-$('#mobile-menu-toggler, #main-menu-toggler').on('click',function(){
-	console.log("toggle that menu!")
+$('#mobile-menu-toggler, #main-menu-toggler').on('click',function(e){
+	// console.log("toggle that menu!")
+	e.preventDefault();
 	TweenMax.to($('#helpbar'),.2,{autoAlpha:1})
 });
 
 
-$('#close-help').on('click',function(){
+$('#close-help').on('click',function(e){
+	e.preventDefault();
 	TweenMax.to($('#helpbar'),.2,{autoAlpha:0})
 });
 
@@ -101,4 +103,19 @@ var facebook = function(e){
 
 
 document.getElementById('twitter-share-timeline').onclick = twitter
-document.getElementById('facebook-share').onclick = facebook
+
+// floating text-box don't cover the top stuff!!
+var $floater = $('.floating-textbox');
+function spaceOutTheFloater(){
+  if (window.innerHeight <= 820) {
+  $floater.addClass('give-room');
+  } else {
+    $floater.removeClass('give-room');
+  }
+};
+
+window.onresize = function() {
+      spaceOutTheFloater();
+}
+
+spaceOutTheFloater();

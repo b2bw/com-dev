@@ -3652,6 +3652,9 @@ table.hover tr:nth-of-type(even):hover {
 
   .top-bar-right {
     float: right; } }
+img {
+  width: 100%; }
+
 @-webkit-keyframes slowbounce {
   0% {
     bottom: 24px; }
@@ -3807,11 +3810,9 @@ header {
     #titleblock {
       margin-top: 24px; } }
   #titleblock img.hero {
-    margin-top: -36px;
     margin-bottom: 48px; }
     @media screen and (min-width: 40em) {
       #titleblock img.hero {
-        margin-top: -48px;
         margin-bottom: 12px; } }
   #titleblock h1 {
     font-size: 10vw;
@@ -3822,11 +3823,14 @@ header {
       #titleblock h1 {
         font-size: 5rem; } }
   #titleblock .floating-textbox {
-    margin-left: 24px;
-    margin-top: -24px;
-    margin-right: 24px; }
+    margin-top: -24px; }
+    @media screen and (min-width: 64em) {
+      #titleblock .floating-textbox.give-room {
+        top: 800px; } }
     @media screen and (min-width: 64em) {
       #titleblock .floating-textbox {
+        margin-left: 24px;
+        margin-right: 24px;
         max-width: 600px;
         position: absolute;
         /* margin-left: 550px;*/
@@ -3932,7 +3936,6 @@ body.subpage > .section.light {
         font-size: 1.5rem; } }
 
 .section-content {
-  position: relative;
   width: 100%;
   float: left;
   padding-left: 0.9375rem;
@@ -3995,7 +3998,7 @@ body.subpage > .section.light {
   padding: 1rem; }
   .top-nav-left:last-child:not(:first-child), .top-nav-center:last-child:not(:first-child), .top-nav-right:last-child:not(:first-child), .mobile-menu-button:last-child:not(:first-child) {
     float: right; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 64em) {
     .top-nav-left, .top-nav-center, .top-nav-right, .mobile-menu-button {
       width: 33.33333%;
       float: left;
@@ -4078,7 +4081,7 @@ body.subpage > .section.light {
   margin-bottom: -20px; }
   .top-nav-center:last-child:not(:first-child) {
     float: right; }
-  @media screen and (min-width: 40em) {
+  @media screen and (min-width: 64em) {
     .top-nav-center {
       width: 33.33333%;
       float: left;
@@ -4096,6 +4099,7 @@ body.subpage > .section.light {
     .top-nav-center li a {
       margin: 3px;
       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+      min-width: 118px;
       /* border-radius:3px;*/
       /* width: 95%;*/
       background: #E6D690;
@@ -4114,7 +4118,7 @@ body.subpage > .section.light {
         margin-bottom: 12px; }
       @media screen and (min-width: 40em) {
         .top-nav-center li a {
-          font-size: 1.2rem; }
+          font-size: 1rem; }
           .top-nav-center li a svg {
             width: 48px;
             height: 48px; } }
@@ -4245,8 +4249,10 @@ footer {
   footer h4 {
     font-weight: 700;
     margin-bottom: 24px; }
+  footer h5 {
+    font-weight: 700; }
   footer p {
-    line-height: .5em; }
+    line-height: 1.2; }
   footer a {
     color: #76686d; }
   footer ul {
@@ -4264,3 +4270,17 @@ footer {
     width: 36px;
     height: 36px;
     margin: 6px; }
+
+.social-share {
+  margin-top: 48px; }
+  @media screen and (min-width: 64em) {
+    .social-share {
+      margin-top: 12px; } }
+  .social-share a {
+    color: #58464c;
+    margin-right: 12px; }
+    .social-share a:hover {
+      color: #5d283c; }
+  .social-share svg {
+    width: 24px;
+    height: 24px; }
