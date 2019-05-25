@@ -12,7 +12,8 @@ description: > # this means to ignore newlines until "baseurl:"
   Armut und Orang-Utan Schutz: Was hat das miteinander zu tun? Viel, denn Unterentwicklung und Ausgrenzung sind wichtige Gründe für Wilderei und Raubbau an der Natur.
 baseurl: "/de" # the subpath of your site, e.g. /blog
 url: "http://www.bos-schweiz.ch/" # the base hostname & protocol for your site
-mailchimpURL: http://eepurl.com/cHtYxn
+# mailchimpURL: http://eepurl.com/cHtYxn
+mailchimpURL: https://bos-schweiz.us15.list-manage.com/subscribe?u=39d111e30686630c3d4649e54&id=665bd799d8
 
 
 # Build settings
